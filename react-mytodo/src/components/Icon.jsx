@@ -1,13 +1,13 @@
 import React from 'react'
-
+import style from './icon.module.css'
 export function IconA() {
   return (
-    <div>Icon A</div>
+    <div className={style.blue}>Icon A</div>
   )
 }
 
 export function IconB() {
   return (
-    <div>Icon B</div>
+    <div className={style.red}>Icon B</div>
   )
 }

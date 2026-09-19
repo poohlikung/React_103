@@ -1,11 +1,14 @@
 import React from 'react'
-
-function Image({imageUrl}) {
+import PropTypes from 'prop-types'
+export default function Image({imageUrl}) {
   return (
     <div>
-        <img src={imageUrl} width="300px" height="300px" alt="" />
+    
+        <img src={imageUrl} width="100px" height="100px" alt="" />
     </div>
   )
 }
 
-export default Image
+Image.propTypes = {
+  imageUrl: PropTypes.string
+}
